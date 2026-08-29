@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(22, 0, 33, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E11299;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1cae;
+}
+
+.dot-pattern-cyan {
+  background-image: radial-gradient(#00D1FF 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dot-pattern-pink {
+  background-image: radial-gradient(#E11299 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes pulse-radar {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+.radar-sweep {
+  animation: pulse-radar 3.5s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+}
+
+.radar-sweep-delayed {
+  animation: pulse-radar 3.5s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+  animation-delay: 1.75s;
+}

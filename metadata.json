@@ -1,0 +1,6 @@
+{
+  "name": "Chubby Chat - Flutter App & Mobile Studio",
+  "description": "Production-ready Chubby Chat Flutter application with Firebase backend, 1-to-1 real-time chat, nearby radar, friend request system, and complete exportable Flutter source code.",
+  "requestFramePermissions": ["geolocation", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
